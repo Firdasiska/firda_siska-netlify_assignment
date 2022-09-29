@@ -1,0 +1,54 @@
+body {
+    background-color: rgba(163, 144, 103, 0.735);
+    font-family: sans-serif;
+}
+
+h1 {
+    color: rgba(23, 22, 22, 0.817);
+    font-size: 30px;
+}
+
+a:link {
+    color: brown;
+}
+
+a:visited {
+    color: rgb(22, 22, 221);
+}
+
+a:active {
+    color: blueviolet;
+}
+
+.container {
+    border: 10px solid rgba(159, 144, 100, 0.728);
+    padding: 15px;
+    margin: 20px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    gap: 5px;
+    background-color: bisque;
+}
+
+.flex { 
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: rgba(163, 144, 103, 0.735);
+    justify-content:space-around;
+}
+
+.layout {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+@media screen and (max-width: 922px) {
+    .container .flex .grid {
+        width: 100%;
+    }
+    
+}
